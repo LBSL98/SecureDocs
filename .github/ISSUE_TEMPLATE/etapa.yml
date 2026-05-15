@@ -1,0 +1,40 @@
+name: Etapa do MVP
+description: Planejar uma etapa pequena do MVP SecureDocs
+title: "[Etapa]: "
+labels: ["etapa", "mvp"]
+body:
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: O que esta etapa entrega?
+    validations:
+      required: true
+  - type: textarea
+    id: escopo
+    attributes:
+      label: Escopo
+      description: O que entra e o que nao entra?
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceite
+      description: Como saberemos que a etapa terminou?
+    validations:
+      required: true
+  - type: textarea
+    id: testes
+    attributes:
+      label: Como testar
+      description: Comandos ou roteiro manual esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: auditoria
+    attributes:
+      label: Audit report
+      description: Arquivo esperado ou gerado em audit_reports.
+    validations:
+      required: false

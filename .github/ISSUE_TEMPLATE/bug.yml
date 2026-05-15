@@ -1,0 +1,44 @@
+name: Bug
+description: Registrar defeito ou comportamento inesperado
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descricao
+      description: O que aconteceu?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Como reproduzir
+      description: Passos ou comandos.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: observado
+    attributes:
+      label: Resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: seguranca
+    attributes:
+      label: Impacto de seguranca
+      description: Ha impacto em confidencialidade, integridade, disponibilidade, autenticacao, autorizacao ou auditoria?
+    validations:
+      required: false
+  - type: textarea
+    id: audit
+    attributes:
+      label: Audit report relacionado
+    validations:
+      required: false
